@@ -9,7 +9,7 @@ export default function AuthenticationLayout({
 }>) {
   return (
     <section>
-      <HeaderPage />
+      {/* <HeaderPage /> */}
       <div className="container-form">
         <Container />
         {children}

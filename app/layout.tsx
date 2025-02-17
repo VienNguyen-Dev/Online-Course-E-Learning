@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Be_Vietnam_Pro, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { HeaderPage } from "@/components/Header";
+import FooterPage from "@/components/Footer";
 
 const beVietNamPro = Be_Vietnam_Pro({
   variable: "--font-be-vietnam-pro",
@@ -22,7 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${beVietNamPro.variable} antialiased`}>
-        <Providers>{children}</Providers>
+        <HeaderPage />
+        <section className=" min-h-screen w-full">{children}</section>
+        <FooterPage />
       </body>
     </html>
   );

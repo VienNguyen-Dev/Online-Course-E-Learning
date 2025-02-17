@@ -1,10 +1,9 @@
 "use client";
 import React from "react";
 import { Button } from "./ui/button";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
 
 export const HeaderPage = () => {
   let currentpage = "sign-up";
@@ -19,15 +18,15 @@ export const HeaderPage = () => {
   return (
     <div className="header">
       <div className="top-banner">
-        <span className="text-header">Free Courses 🌟 Sale Ends Soon, Get It Now</span>
+        <span className="text-header-page">Free Courses 🌟 Sale Ends Soon, Get It Now</span>
         <div className="header-icon">
-          <img src="/assets/icons/right-arrow.svg" alt="right-arrow" />
+          <img className="max-w-[24px] max-h-[24px]" src="/assets/icons/right-arrow.svg" alt="right-arrow" />
         </div>
       </div>
       <div className="navbar">
         <div className="content-container">
           <div className="logo-navbar" onClick={() => router.push("/")}>
-            <img src="/assets/images/logo.svg" alt="logo" />
+            <img className="max-w-[44px] " src="/assets/images/logo.svg" alt="logo" />
           </div>
           <ul className="item-navbar">
             <Link className="hover:text-[#262626]/50" href={"/"}>
@@ -55,40 +54,38 @@ export const HeaderPage = () => {
             <Button className={`${currentpage === "sign-in" ? "active-button-container" : "unactive-button-container"}`}>Sign In</Button>
           </Link>
           <div className="block sm:hidden">
-            <DropdownMenu>
-              <DropdownMenuTrigger>
-                <img src="/assets/icons/dropdown-icon.svg" alt="dropdown-icon" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <ul className="mobile-item-navbar">
-                  <DropdownMenuItem>
-                    <Link className="hover:text-[#262626]/50" href={"/"}>
-                      Home
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button>
+                  <img src="/assets/icons/dropdown-icon.svg" alt="dropdown-icon" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent>
+                <SheetHeader>
+                  <SheetTitle className="text-white font-semibold text-2xl">Menu</SheetTitle>
+                </SheetHeader>
+                <div className="grid gap-4 py-4">
+                  <ul className="mobile-item-navbar">
+                    <Link href={"/"}>Home</Link>
                     <Link className="hover:text-[#262626]/50" href={"/courses"}>
                       Courses
                     </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
+
                     <Link className="hover:text-[#262626]/50" href={"/about-us"}>
                       About Us
                     </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
+
                     <Link className="hover:text-[#262626]/50" href={"/pricing"}>
                       Pricing
                     </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
+
                     <Link className="hover:text-[#262626]/50" href={"/contact"}>
                       Contact
                     </Link>
-                  </DropdownMenuItem>
-                </ul>
-              </DropdownMenuContent>
-            </DropdownMenu>
+                  </ul>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>

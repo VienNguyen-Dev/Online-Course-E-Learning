@@ -17,9 +17,14 @@ interface AuthFormType {
 }
 
 const formSchema = z.object({
-  fullname: z.string().min(3, {
-    message: "Full Name must be at least 3 characters.",
-  }),
+  fullname: z
+    .string()
+    .min(3, {
+      message: "Full Name must be at least 3 characters.",
+    })
+    .max(50, {
+      message: "Full Name must be shorter than 50 characters.",
+    }),
   email: z.string().email().max(50, {
     message: "Email is not format or must not be longger than 50 characters.",
   }),
@@ -28,7 +33,7 @@ const formSchema = z.object({
   }),
 });
 const AuthForm = ({ type }: AuthFormType) => {
-  const { data: session } = useSession();
+  // const { data: session } = useSession();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -60,7 +65,7 @@ const AuthForm = ({ type }: AuthFormType) => {
                   <CustomFormField control={form.control} name="email" />
                   <CustomFormField control={form.control} name="password" />
                   <div className="flex items-center space-x-2">
-                    <Checkbox id="terms" />
+                    <Checkbox required id="terms" />
                     <label htmlFor="terms" className="text-sm xl:text-[16px] 2xl:text-[18px] font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                       <p className=" text-wrap">
                         I agree with{" "}

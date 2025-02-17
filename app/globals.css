@@ -54,7 +54,7 @@ body {
 
 }
 
-.text-header {
+.text-header-page{
   @apply text-center text-white xl:text-xl text-sm
 
 }
@@ -79,7 +79,7 @@ body {
 
 
 .mobile-item-navbar {
-  @apply flex flex-col justify-start items-center bg-[#F7F7F8] p-2 gap-2
+  @apply flex flex-col justify-start items-center  p-2 gap-2 text-white
 }
 
 .button-container {
@@ -163,7 +163,7 @@ body {
 
 .footer-section {
   @apply w-full min-h-[335px]
-   2xl:gap-[50px] 2xl:pt-[100px] 2xl:pb-[30px] 2xl:pr-[162px] 2xl:pl-[162px] xl:px-[80px] xl:pt-[60px] xl:pb-[20px] flex xl:gap-[30px] bg-white flex-wrap sm:flex-row sm:justify-between justify-center pt-[50px] gap-[20px] pr-[20px] pb-[24px] pl-[20px]
+   2xl:gap-[50px] 2xl:pt-[100px] 2xl:pb-[30px] 2xl:pr-[162px] 2xl:pl-[162px] xl:px-[80px] xl:pt-[60px] xl:pb-[20px] flex xl:gap-[30px] bg-white flex-wrap sm:flex-row sm:justify-between justify-center pt-[50px] gap-[20px]  pb-[24px]  px-[20px]
 }
 
 .left-footer-section {
@@ -189,4 +189,29 @@ body {
 
 .right-footer-section {
   @apply flex gap-[24px] flex-1 sm:justify-end justify-start flex-wrap sm:flex-row 
+}
+
+.home-page {
+  @apply w-full h-full bg-[#F7F7F8] flex flex-col 
+}
+
+.brand-section {
+  @apply bg-[#FCFCFD] 2xl:rounded-[12px] rounded-[8px] border-[1px] 2xl:p-[30px] xl:p-[24px] p-[10px] xl:mt-[100px] xl:mb-[100px] flex justify-between items-center xl:mx-[81px] border-[#F1F1F3] max-w-[1596px]   2xl:min-h-[154px] xl:min-h-[116px] min-h-[84px] mt-[30px] mb-[30px] mx-[17px];
+}
+
+.benefit-section {
+  @apply max-w-[1597px]  2xl:mt-[150px] xl:mt-[100px] mt-[50px] flex 2xl:gap-[80px] 2xl:mx-[161px] xl:mx-[81px] xl:gap-[60px] mx-[17px] gap-[40px] flex-col
+}
+
+
+.text-header {
+  @apply 2xl:text-[48px] xl:text-[38px] font-semibold text-[#262626] text-[28px] text-start
+}
+
+.text-paragraph {
+  @apply 2xl:text-[18px] xl:text-[16px] text-[#59595A] font-normal text-[14px]
+}
+
+.header-section {
+  @apply w-full flex 2xl:gap-[300px] xl:gap-[250px] gap-[20px] items-start flex-col sm:flex-row
 }

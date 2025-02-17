@@ -56,7 +56,7 @@ const FooterPage = () => {
           </div>
         </div>
       </div>
-      <hr className="text-[#F1F1F3] border-[1px] w-full" />
+      <hr className="border-[#F1F1F3] border w-full" />
       <div className="w-full">
         <p className="text-[#656567] text-sm text-center">© 2023 Skillbridge. All rights reserved.</p>
       </div>
