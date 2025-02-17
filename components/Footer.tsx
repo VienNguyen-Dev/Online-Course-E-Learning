@@ -3,7 +3,7 @@ import React from "react";
 
 const FooterPage = () => {
   return (
-    <div className="footer-section">
+    <div className="footer-section 2xl:mt-[150px] xl:mt-[100px] mt-[50px] ">
       <div className=" flex justify-between flex-wrap sm:flex-row">
         <div className="left-footer-section">
           <img className="w-[44px] h-[44px] rounded-[6px]" src="/assets/images/logo.svg" alt="logo" />

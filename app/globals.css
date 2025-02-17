@@ -71,10 +71,10 @@ body {
   @apply flex justify-center items-center gap-[50px]
 }
 .logo-navbar {
-  @apply cursor-pointer
+  @apply cursor-pointer 2xl:w-[54px] 2xl:h-[54px] xl:w-[44px] xl:h-[44px] w-[40px] h-[40px] 
 }
 .item-navbar {
-  @apply gap-[26px] font-normal text-sm text-[#262626] hidden sm:flex
+  @apply gap-[26px] font-normal text-[#262626] hidden sm:flex items-center 
 }
 
 
@@ -83,14 +83,14 @@ body {
 }
 
 .button-container {
-  @apply flex gap-[8px] px-[20px] py-[12px] items-center
+  @apply flex xl:px-[20px] xl:py-[12px] items-center xl:gap-[30px] gap-[20px]
  }
  .unactive-button-container {
- @apply font-normal text-sm text-[#262626] rounded-[6px] pt-[12px] pr-[24px] pb-[12px] pl-[24px] text-center
+ @apply font-normal text-sm text-[#262626]  text-center
  }
 
 .active-button-container {
-  @apply text-[#FFFFFF] bg-[#FF9500] rounded-[6px] pt-[12px] pr-[24px] pb-[12px] pl-[24px] text-center hover:bg-transparent hover:text-[#262626]
+  @apply text-[#FFFFFF] bg-[#FF9500] rounded-[6px] xl:px-[24px] py-[12px] px-[20px] text-center hover:bg-transparent hover:text-[#262626]
 }
 
 .container-form {
