@@ -6,7 +6,7 @@ import CourseHeader from "@/components/CourseHeader";
 const CoursesPage = () => {
   return (
     <div className="flex flex-col">
-      <div className="2xl:mx-[30px] xl:mx-[20px] xm-[16px]">
+      <div className="2xl:mx-[30px] xl:mx-[20px] mx-[16px]">
         <CourseHeader
           title="Online Courses on Design and Development"
           description="Welcome to our online course page, where you can enhance your skills in design and development. Choose from our carefully curated selection of 10 courses designed to provide you with
