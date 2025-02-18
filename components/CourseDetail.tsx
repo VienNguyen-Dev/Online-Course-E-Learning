@@ -1,12 +1,14 @@
+"use client";
 import React from "react";
 import { Button } from "./ui/button";
-import FooterPage from "./Footer";
+import { useRouter } from "next/navigation";
 
 type Curriculum = {
   number: string;
   description: string;
 };
 interface CourseDetailProps {
+  id: string;
   title: string;
   description: string;
   image: string[];
@@ -15,7 +17,9 @@ interface CourseDetailProps {
   author: string;
   curriculum: Curriculum[];
 }
-const CourseDetail = ({ title, description, image, courseDuration, courseLevel, author, curriculum }: CourseDetailProps) => {
+const CourseDetail = ({ id, title, description, image, courseDuration, courseLevel, author, curriculum }: CourseDetailProps) => {
+  const router = useRouter();
+
   return (
     <div className=" 2xl:rounded-[12px] 2xl:p-[50px] flex flex-col xl:gap-[50px] bg-white xl:rounded-[10px] xl:p-[40px] p-[24px]  gap-[40px]">
       <div className="flex flex-col 2xl:gap-[30px] gap-[24px]  ">
@@ -24,7 +28,10 @@ const CourseDetail = ({ title, description, image, courseDuration, courseLevel, 
             <p className=" font-semibold 2xl:text-[24px] xl:text-[20px] text-[#262626] text-[18px]">{title}</p>
             <p className=" font-normal 2xl:text-[18px] xl:text-[16px]  text-[#59595A] text-[14px]">{description}</p>
           </div>
-          <Button className=" rounded-[8px] border border-[#F1F1F3] 2xl:py-[18px] 2xl:px-[24px] py-[14px] px-[16px] bg-[#FCFCFD] text-[#262626]  xl:text-[16px] text-[14px] 2xl:text-[18px] font-medium max-w-[160px] h-auto">
+          <Button
+            onClick={() => router.push(`/courses/course-detail/${id}`)}
+            className=" rounded-[8px] border border-[#F1F1F3] 2xl:py-[18px] 2xl:px-[24px] py-[14px] px-[16px] bg-[#FCFCFD] text-[#262626]  xl:text-[16px] text-[14px] 2xl:text-[18px] font-medium max-w-[160px] h-auto"
+          >
             View Course
           </Button>
         </div>

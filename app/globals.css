@@ -46,11 +46,11 @@ body {
 }
 
 .header {
-  @apply w-full h-[154px] pt-5 pl-[20px] pr-[20px] 2xl:pl-[30px] 2xl:pr-[30px] 
+  @apply  w-full h-[154px] pt-5 pl-[20px] pr-[20px] 2xl:pl-[30px] 2xl:pr-[30px] 
 }
 
 .top-banner {
-  @apply flex justify-between sm:justify-center items-center w-full h-[55px] xl:rounded-[8px] rounded-[6px] xl:pb-[14px] xl:pt-[14px] bg-[#FF9500] xl:gap-[23px] px-[16px] py-[10px]
+  @apply  flex justify-between sm:justify-center items-center w-full h-[55px] xl:rounded-[8px] rounded-[6px] xl:pb-[14px] xl:pt-[14px] bg-[#FF9500] xl:gap-[23px] px-[16px] py-[10px]
 
 }
 

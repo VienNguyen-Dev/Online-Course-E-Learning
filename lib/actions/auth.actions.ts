@@ -3,7 +3,7 @@ import { OAuthProvider } from "node-appwrite";
 import { cookies } from "next/headers";
 import { ID } from "appwrite";
 import { redirect } from "next/navigation";
-import { createAdminClient, createSessionClient } from "./appwrite-config";
+import { createAdminClient, createSessionClient } from "../server/appwrite-config";
 
 export async function getLoggedInUser() {
   try {
