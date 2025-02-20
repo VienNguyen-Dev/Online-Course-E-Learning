@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const PlanItem = ({ content, image }: { content: string; image: string }) => {
   const [imageStyle, setImageStyle] = useState(image.includes("close"));
-  setImageStyle(true);
+  // setImageStyle(true);
   return (
     <div className=" rounded-[8px] border p-[14px] flex gap-[12px] border-[#F1F1F3] max-h-[60px] max-w-[504px]">
       <div
