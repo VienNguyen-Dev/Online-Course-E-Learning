@@ -1,14 +1,12 @@
 "use client";
 import CourseHeader from "@/components/HeaderSectionPage";
 import StepCard from "@/components/StepCard";
-import { getCourseById } from "@/lib/actions/course.action";
 import Image from "next/image";
-import { useParams } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const CourseDetailPage = () => {
-  const { courseId } = useParams();
-  const [course, setCourse] = useState({});
+  // const { courseId } = useParams();
+  // const [course, setCourse] = useState({});
   // useEffect(() => {
   //   const fetchCourseById = async () => {
   //     const courseById = await getCourseById(courseId as string);

@@ -1,6 +1,5 @@
 import React from "react";
-import HeaderSection from "./HeaderSection";
-import { headerContents, questions } from "@/constants";
+import { questions } from "@/constants";
 import { Button } from "./ui/button";
 import QuestionCard from "./QuestionCard";
 

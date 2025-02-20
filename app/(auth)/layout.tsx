@@ -1,6 +1,5 @@
 import { Container } from "@/components/Container";
 import FooterPage from "@/components/Footer";
-import { HeaderPage } from "@/components/Header";
 
 export default function AuthenticationLayout({
   children,
@@ -9,7 +8,6 @@ export default function AuthenticationLayout({
 }>) {
   return (
     <section>
-      {/* <HeaderPage /> */}
       <div className="container-form">
         <Container />
         {children}

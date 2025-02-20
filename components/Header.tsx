@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
 
 export const HeaderPage = () => {
   let currentpage = "sign-up";

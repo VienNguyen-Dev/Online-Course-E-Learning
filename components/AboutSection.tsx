@@ -31,7 +31,7 @@ const AboutSection = ({ title, description, aboutItem }: AboutSectionProps) => {
               <h2 className=" font-semibold 2xl:text-[48px] xl:text-[38px] text-[28px] ">
                 {" "}
                 <span className=" text-[#FF9500]">Together</span>
-                <span className="text-[#262626]">, let's shape the future of digital innovation</span>
+                <span className="text-[#262626]">&lsquo; let&apos;s shape the future of digital innovation</span>
               </h2>
               <p className=" font-normal 2xl:text-[18px] xl:text-[16px] text-[14px] text-[#4C4C4D]">Join us on this exciting learning journey and unlock your potential in design and development.</p>
             </div>

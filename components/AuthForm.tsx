@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "./ui/form";
+import { Form } from "./ui/form";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+// import { Input } from "./ui/input";
 import CustomFormField from "./CustomFormField";
 import Link from "next/link";
 import { Checkbox } from "./ui/checkbox";
-import { signIn, signOut, useSession } from "next-auth/react";
+import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
 interface AuthFormType {

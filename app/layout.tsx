@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro, Geist, Geist_Mono } from "next/font/google";
+import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
-import { Providers } from "./providers";
 import { HeaderPage } from "@/components/Header";
 import FooterPage from "@/components/Footer";
 

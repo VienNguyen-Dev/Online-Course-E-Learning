@@ -1,10 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const HeroSection = () => {
-  const router = useRouter();
+  // const router = useRouter();
   const [active, setActive] = useState("courses");
   return (
     <div className="flex flex-col items-center max-w-[965px]  2xl:gap-[60px]  gap-[50px]   mt-[50px] xl:mt-[100px] xl:mx-[250px]  mx-[17px]">

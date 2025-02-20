@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from "./ui/form";
 import { Input } from "./ui/input";
-import { Control, FieldValue, FieldValues, Path } from "react-hook-form";
+import { Control, FieldValues, Path } from "react-hook-form";
 import { convertCharUpperCase } from "@/lib/ConvertCharUpperCase";
 import { Button } from "./ui/button";
-import { useRouter } from "next/navigation";
-import Email from "next-auth/providers/email";
 import { Textarea } from "./ui/textarea";
 
 interface CustomFormFieldProps<T extends FieldValues> {
