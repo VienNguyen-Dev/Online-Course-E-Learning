@@ -225,3 +225,22 @@ export const aboutSections = [
     ],
   },
 ];
+
+export const contactInfo = [
+  {
+    image: ["email-icon.svg"],
+    info: "support@skillbridge.com",
+  },
+  {
+    image: ["phone-icon.svg"],
+    info: "+91 00000 00000",
+  },
+  {
+    image: ["location-icon.svg"],
+    info: "Some Where in the World",
+  },
+  {
+    image: ["facebook-icon.svg", "tweet-icon.svg", "linkedin-icon.svg"],
+    info: "Social Profiles",
+  },
+];
