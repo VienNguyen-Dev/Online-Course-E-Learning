@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { cardContents, headerContents } from "@/app/constants";
+import { cardContents, headerContents } from "@/constants";
 import CardContent from "./CardContent";
 import HeaderSection from "./HeaderSection";
 

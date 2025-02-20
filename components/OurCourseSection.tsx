@@ -1,5 +1,5 @@
 import React from "react";
-import { headerContents } from "@/app/constants";
+import { headerContents } from "@/constants";
 import { CardCourse } from "./CardCourse";
 import HeaderSection from "./HeaderSection";
 import { courseDetails } from "@/lib/actions/course.action";

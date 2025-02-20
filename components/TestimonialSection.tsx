@@ -1,4 +1,4 @@
-import { headerContents, testimonialList } from "@/app/constants";
+import { headerContents, testimonialList } from "@/constants";
 import React from "react";
 import HeaderSection from "./HeaderSection";
 import TestimonialCard from "./TestimonialCard";

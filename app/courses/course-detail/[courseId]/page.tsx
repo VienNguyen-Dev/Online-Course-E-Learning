@@ -152,7 +152,7 @@ const CourseDetailPage = () => {
         <CourseHeader title={`${firstCourse.title} Course`} description={firstCourse.description} />
       </div>
       <div className="flex flex-col 2xl:mx-[162px] xl:mx-[80px] mx-[16px]  ">
-        <div className="relative 2xl:mt-[100px] xl:mt-[80px] mt-[50px]  w-full 2xl:max-w-[1596px] sm:max-w-[1280px] max-w-[358px]">
+        <div className="relative 2xl:mt-[100px] xl:mt-[80px] mt-[50px]  ">
           <img className=" w-full object-cover 2xl:max-h-[790px] max-h-[247px] xl:max-h-[649px] rounded-[12px]" src={`/assets/images/${firstCourse.image[0]}`} alt={firstCourse.title} />
           <Image className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer" src={"/assets/images/play-button.png"} width={72} height={72} alt="play-button" />
         </div>

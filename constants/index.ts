@@ -167,3 +167,61 @@ export const questions = [
     question: "Can I download the course materials for offline access?",
   },
 ];
+
+export const aboutSections = [
+  {
+    title: "Achievements",
+    description: "Our commitment to excellence has led us to achieve significant milestones along our journey. Here are some of our notable achievements",
+    aboutItem: [
+      {
+        name: "Trusted by Thousands",
+        image: "king-icon.svg",
+        content: "We have successfully served thousands of students, helping them unlock their potential and achieve their career goals.",
+      },
+      {
+        name: "Award-Winning Courses",
+        image: "award-icon.svg",
+        content: "Our courses have received recognition and accolades in the industry for their quality, depth of content, and effective teaching methodologies.",
+      },
+      {
+        name: "Positive Student Feedback",
+        image: "feedback-icon.svg",
+        content: "We take pride in the positive feedback we receive from our students, who appreciate the practicality and relevance of our course materials.",
+      },
+      {
+        name: "Industry Partnerships",
+        image: "parner-icon.svg",
+        content: "We have established strong partnerships with industry leaders, enabling us to provide our students with access to the latest tools and technologies",
+      },
+    ],
+  },
+  {
+    title: "Our Goals",
+    description:
+      "At SkillBridge, our goal is to empower individuals from all backgrounds to thrive in the world of design and development. We believe that education should be accessible and transformative, enabling learners to pursue their passions and make a meaningful impact. Through our carefully crafted courses, we aim to",
+    aboutItem: [
+      {
+        name: "Provide Practical Skills",
+        image: "skill-icon.svg",
+        content:
+          "We focus on delivering practical skills that are relevant to the current industry demands. Our courses are designed to equip learners with the knowledge and tools needed to excel in their chosen field.",
+      },
+      {
+        name: "Foster Creative Problem-Solving",
+        image: "solving-icon.svg",
+        content: "We encourage creative thinking and problem-solving abilities, allowing our students to tackle real-world challenges with confidence and innovation.",
+      },
+      {
+        name: "Promote Collaboration and Community",
+        image: "community-icon.svg",
+        content: "We believe in the power of collaboration and peer learning. Our platform fosters a supportive and inclusive community where learners can connect, share insights, and grow together.",
+      },
+      {
+        name: "Stay Ahead of the Curve",
+        image: "ring-icon.svg",
+        content:
+          "The digital landscape is constantly evolving, and we strive to stay at the forefront of industry trends. We regularly update our course content to ensure our students receive the latest knowledge and skills.",
+      },
+    ],
+  },
+];

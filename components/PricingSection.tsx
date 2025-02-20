@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import HeaderSection from "./HeaderSection";
-import { freePlans, headerContents, proPlans } from "@/app/constants";
+import { freePlans, headerContents, proPlans } from "@/constants";
 import { Button } from "./ui/button";
 import PlanItem from "./PlanItem";
 
