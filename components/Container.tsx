@@ -2,10 +2,10 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 
 export const Container = () => {
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
   return (
     <div className="sub-container">

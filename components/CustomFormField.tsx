@@ -19,7 +19,9 @@ const CustomFormField = <T extends FieldValues>({ control, name }: CustomFormFie
   const togglePasswordVisibility = () => {
     setShowPassword((prev: any) => !prev);
   };
-  let labelName = name === "firstname" ? "First Name" : name === "lastname" ? "Last Name" : name;
+
+  let labelName = "";
+  name === "firstname" ? (labelName = "First Name") : name === "lastname" ? (labelName = "Last Name") : (labelName = name);
 
   return (
     <div className={` w-full`}>
