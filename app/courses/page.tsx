@@ -1,7 +1,7 @@
 import React from "react";
 import CourseDetail from "@/components/CourseDetail";
 import { courseDetails } from "@/lib/actions/course.action";
-import CourseHeader from "@/components/CourseHeader";
+import CourseHeader from "@/components/HeaderSectionPage";
 
 const CoursesPage = () => {
   return (

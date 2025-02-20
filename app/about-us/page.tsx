@@ -1,5 +1,5 @@
 import AboutSection from "@/components/AboutSection";
-import CourseHeader from "@/components/CourseHeader";
+import CourseHeader from "@/components/HeaderSectionPage";
 import { aboutSections } from "@/constants";
 import React from "react";
 

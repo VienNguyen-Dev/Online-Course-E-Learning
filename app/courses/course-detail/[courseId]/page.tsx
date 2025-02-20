@@ -1,5 +1,5 @@
 "use client";
-import CourseHeader from "@/components/CourseHeader";
+import CourseHeader from "@/components/HeaderSectionPage";
 import StepCard from "@/components/StepCard";
 import { getCourseById } from "@/lib/actions/course.action";
 import Image from "next/image";

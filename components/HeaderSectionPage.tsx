@@ -1,13 +1,13 @@
 import React from "react";
 
-interface CourseHeaderProps {
+interface HeaderSectionPageProps {
   title: string;
   description: string;
 }
 
-const CourseHeader = ({ title, description }: CourseHeaderProps) => {
+const HeaderSectionPage = ({ title, description }: HeaderSectionPageProps) => {
   return (
-    <div className="2xl:mt-[109px] border-b border-[#E4E4E7]   flex 2xl:gap-[100px] xl:mt-[80px]  xl:gap-[80px] flex-col  mt-[50px]   sm:flex-row gap-[16px] 2xl:max-w-[1860px] sm:max-w-[1400px] max-w-[358px]   2xl:pb-[50px]  xl:px-[60px] xl:pb-[40px] pb-[30px] ">
+    <div className="2xl:mt-[109px] border-b border-[#E4E4E7]   flex 2xl:gap-[100px] xl:mt-[80px]  xl:gap-[80px] flex-col  mt-[50px]   sm:flex-row gap-[16px] 2xl:max-w-[1860px] sm:max-w-[1400px] max-w-[358px]   2xl:pb-[50px]  xl:px-[60px] xl:pb-[40px] pb-[30px] items-center ">
       <div className=" w-full">
         <h1 className="2xl:max-w-[748px] max-w-[600px]  2xl:text-[48px] font-semibold text-[#262626] xl:text-[38px] text-[28px] ">{title}</h1>
       </div>
@@ -18,4 +18,4 @@ const CourseHeader = ({ title, description }: CourseHeaderProps) => {
   );
 };
 
-export default CourseHeader;
+export default HeaderSectionPage;
