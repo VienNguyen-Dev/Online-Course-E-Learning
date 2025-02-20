@@ -47,7 +47,8 @@ const AuthForm = ({ type }: AuthFormType) => {
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
   }
-  let subitButton = type === "sign-in" ? "Sign In" : "Sign Up";
+  let submitButton = "";
+  type === "sign-in" ? (submitButton = "Sign In") : (submitButton = "Sign Up");
   const router = useRouter();
   return (
     <div className="auth-form">
@@ -98,7 +99,7 @@ const AuthForm = ({ type }: AuthFormType) => {
                 </div>
               )}
               <Button className="bg-[rgb(255,149,0)] h-[56px] w-full py-[16px] px-[24px] rounded-[8px] text-white text-sm font-medium" type="submit">
-                {subitButton}
+                {submitButton}
               </Button>
             </form>
           </Form>
